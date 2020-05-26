@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		153EFFFCDDE072A3BC7AF56F /* OLottieView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = OLottieView.podspec; path = ../OLottieView.podspec; sourceTree = "<group>"; };
+		153EFFFCDDE072A3BC7AF56F /* OLottieView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = OLottieView.podspec; path = ../OLottieView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4221336672C683A80FED7A1A /* Pods_OLottieView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OLottieView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A310139FC9D11BC37361BA2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5A310139FC9D11BC37361BA2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* OLottieView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OLottieView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		62BD6B9B8C40C7FF7E87BB12 /* Pods-OLottieView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLottieView_Example.debug.xcconfig"; path = "Target Support Files/Pods-OLottieView_Example/Pods-OLottieView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		66591B5296D7CAC4A931DA79 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		66591B5296D7CAC4A931DA79 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6F2D1FFFE179A41A2B125D1C /* Pods_OLottieView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OLottieView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1735CE04965059DC2B6554 /* Pods-OLottieView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLottieView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-OLottieView_Tests/Pods-OLottieView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA9F0638C3C3D68C7D51475B /* Pods-OLottieView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OLottieView_Tests.release.xcconfig"; path = "Target Support Files/Pods-OLottieView_Tests/Pods-OLottieView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				7D1735CE04965059DC2B6554 /* Pods-OLottieView_Tests.debug.xcconfig */,
 				CA9F0638C3C3D68C7D51475B /* Pods-OLottieView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -292,10 +292,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OLottieView_Example/Pods-OLottieView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OLottieView/OLottieView.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OLottieView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
