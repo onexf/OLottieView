@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class OLottieView: UIView {
+public class OLottieView: UIView {
 
     private let animationView: AnimationView = {
         let animationView = AnimationView()
